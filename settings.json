@@ -1,0 +1,59 @@
+{
+
+    // Python Settings
+    // >>> Some Tools --
+    // Pack: https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
+    // AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl#overview
+    "python.languageServer": "Microsoft",
+    "python.analysis.openFilesOnly": true,
+    "python.pythonPath": "<your-python-path>",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.memory.keepLibraryAst": true,
+
+    // Linting
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+
+    // Formatting
+    "python.formatting.provider": "autopep8",
+
+    // Editor Visual
+    // Icons: https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons
+    // I use Henna Color Theme: https://marketplace.visualstudio.com/items?itemName=httpsterio.henna
+    // With Fira Code Font: https://github.com/tonsky/FiraCode 
+    "editor.fontFamily": "Fira Code Retina",
+
+    // Font Ligatures: https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+    "editor.fontLigatures": true,
+
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+                    "string.quoted.docstring.multi.python punctuation.definition.string.end.python",
+                    "string.quoted.docstring.multi.python"
+                ],
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#606f73"
+                }
+            }
+        ]
+    },
+
+    // Editor Features
+    "files.autoSave": "off",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+
+}
