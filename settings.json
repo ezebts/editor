@@ -2,6 +2,7 @@
 
     // Python Settings
     // >>> Some Tools --
+    // Indent Rainbow: https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
     // Pack: https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
     // AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl#overview
     "python.languageServer": "Microsoft",
