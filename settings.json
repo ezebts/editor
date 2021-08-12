@@ -1,33 +1,35 @@
 {
-
     // Python Settings
     // >>> Some Tools --
     // Indent Rainbow: https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
     // Pack: https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack
     // AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl#overview
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Jedi",
     "python.analysis.openFilesOnly": true,
     "python.pythonPath": "<your-python-path>",
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.memory.keepLibraryAst": true,
-
     // Linting
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-
+    "vsintellicode.features.python.deepLearning": "enabled",
     // Formatting
     "python.formatting.provider": "autopep8",
-
     // Editor Visual
     // Icons: https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons
     // I use Henna Color Theme: https://marketplace.visualstudio.com/items?itemName=httpsterio.henna
-    // With Fira Code Font: https://github.com/tonsky/FiraCode 
-    "editor.fontFamily": "Fira Code Retina",
-
+    // With Fira Code Font: https://github.com/tonsky/FiraCode
+    // Or simple using 
+    //  - (For Windows) choco install firacode if chocolatey is installed
+    //  - (For Archlinux) pacman -Syu ttf-fira-code using pacman util and having configured correct repositories
     // Font Ligatures: https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+    "editor.fontFamily": "Fira Code Retina",
     "editor.fontLigatures": true,
-
     "editor.fontSize": 14,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
@@ -46,7 +48,6 @@
             }
         ]
     },
-
     // Editor Features
     "files.autoSave": "off",
     "files.exclude": {
@@ -56,5 +57,4 @@
         "**/CVS": true,
         "**/.DS_Store": true
     },
-
 }
