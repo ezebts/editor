@@ -6,7 +6,7 @@
     // AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl#overview
     "python.languageServer": "Jedi",
     "python.analysis.openFilesOnly": true,
-    "python.pythonPath": "<your-python-path>",
+    "python.pythonPath": "C:\\Python39\\python.exe",
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.memory.keepLibraryAst": true,
     // Linting
@@ -39,11 +39,12 @@
                 "scope": [
                     "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
                     "string.quoted.docstring.multi.python punctuation.definition.string.end.python",
-                    "string.quoted.docstring.multi.python"
+                    "string.quoted.docstring.multi.python",
+                    "comment"
                 ],
                 "settings": {
                     "fontStyle": "italic",
-                    "foreground": "#606f73"
+                    "foreground": "#6c7d83"
                 }
             }
         ]
