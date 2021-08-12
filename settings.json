@@ -6,7 +6,7 @@
     // AREPL: https://marketplace.visualstudio.com/items?itemName=almenon.arepl#overview
     "python.languageServer": "Jedi",
     "python.analysis.openFilesOnly": true,
-    "python.pythonPath": "C:\\Python39\\python.exe",
+    "python.pythonPath": "<your-python-path>",
     "python.envFile": "${workspaceFolder}/.env",
     "python.analysis.memory.keepLibraryAst": true,
     // Linting
